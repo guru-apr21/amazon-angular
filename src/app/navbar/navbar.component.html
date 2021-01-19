@@ -1,0 +1,35 @@
+<nav class="navbar">
+  <a routerLink="/">
+    <img
+      class="navbar__logo"
+      src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+      alt="amazon-logo"
+    />
+  </a>
+  <div class="navbar__search">
+    <input type="text" class="navbar__searchInput" />
+  </div>
+  <div class="navbar__nav">
+    <a routerLink="/login" class="navbar__link">
+      <div class="navbar__option">
+        <span class="navbar__optionLine1">Hello,</span>
+        <span class="navbar__optionLine2">Sign In</span>
+      </div>
+    </a>
+    <a routerLink="/orders" class="navbar__link">
+      <div class="navbar__option">
+        <span class="navbar__optionLine1">Returns&</span>
+        <span class="navbar__optionLine2">Orders</span>
+      </div>
+    </a>
+    <a routerLink="/cart" class="navbar__link">
+      <div style="flex-direction: row" class="navbar__option">
+        <fa-icon [icon]="faShopingCart"></fa-icon>
+        <span style="margin-top: 15px" class="navbar__optionLine2"> Cart </span>
+        <span class="navbar__cartCount">
+          {{ totalItems }}
+        </span>
+      </div>
+    </a>
+  </div>
+</nav>

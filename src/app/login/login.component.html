@@ -1,0 +1,19 @@
+<div>
+  <form ngForm #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-group">
+    <label for="email">Email</label>
+    <input class="form-control" ngModel id="email" type="text" name="email" />
+    <label for="password">Password</label>
+    <input
+      class="form-control"
+      ngModel
+      id="password"
+      type="password"
+      name="password"
+    />
+    <button class="btn btn-primary" type="submit">Sign In</button>
+  </form>
+  <br />
+  <button class="btn btn-secondary" routerLink="/signup">
+    Create an amazon account
+  </button>
+</div>
